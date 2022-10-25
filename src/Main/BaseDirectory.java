@@ -1,5 +1,6 @@
 package Main;
-import DataStructures.List.List;
+import DataStructures.List.*;
+
 
 /**
  * Base Directory Interface

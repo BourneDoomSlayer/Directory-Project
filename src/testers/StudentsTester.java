@@ -1,14 +1,13 @@
 package testers;
-
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import DataStructures.List.DoublyLinkedList;
 import DataStructures.List.List;
-import Main.ContactCard;
+import DataStructures.List.List.DoublyLinkedList;
 import Main.Directory;
+import Main.ContactCard;
 
 public class StudentsTester {
 	private Directory dir;
@@ -114,7 +113,7 @@ public class StudentsTester {
 		johnDoe.setEmail("john.doe@mail.com");
 		johnDoe.setPhone("1234567890");
 		johnDoe.setJobTitle("Worker");
-		johnDoe.setFriends(new DoublyLinkedList<>());
+		johnDoe.setFriends(new DoublyLinkedList<ContactCard>());
 		// Check each field
 		boolean checkID = johnDoe.getID() == 0;
 		boolean checkName = johnDoe.getName().equals("John Doe");
