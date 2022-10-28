@@ -82,7 +82,7 @@ public class StudentsTester {
 		 * They should have 0 friends in common
 		 * Should return: {}
 		 */
-		List<ContactCard> CFs = dir.commonFriends(annaWilliams, dianaWoodward);
+		List<ContactCard> CFs = dir.commonFriends(dianaWoodward, annaWilliams);
 		assertTrue("Failed to return a list with the contacts of IDs { } when calling "
 				+ "commonFriends(1521, 914).", CFs.isEmpty());
 	}
@@ -96,7 +96,7 @@ public class StudentsTester {
 		 * Should return: Bonny Mongelli (4903) and Gertrude Hansen (6376)
 		 */
 		int[] suggIds = new int[] {4903, 6376};
-		List<ContactCard> CFs = dir.commonFriends(brendaGolding, lorenzoCunningham);
+		List<ContactCard> CFs = dir.commonFriends(lorenzoCunningham, brendaGolding);
 		assertTrue("Failed to return a list with the contacts of IDs {4903, 6376} when calling "
 				+ "commonFriends(2267, 66).", checkContent(suggIds, CFs));
 	}

@@ -12,7 +12,7 @@ public interface BaseDirectory {
 	 * Method that takes in a string representing 
 	 * the path of contactDirectoy.csv and parses said csv. 
 	 * Once parsed, the Directory class will have filled up the private directory 
-	 * ArrayList<ContactCard> field
+	 * DoublyLinkedList<ContactCard> field
 	 * 
 	 * @param path - Path to contactDirectory.csv
 	 * @author bermed28
